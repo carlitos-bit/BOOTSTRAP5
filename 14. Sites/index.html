@@ -25,6 +25,21 @@
     .news-placeholder::placeholder{
       color: #6c757d;
     }
+    .instagram-icon:hover{
+      background: linear-gradient(45deg, #fcaf45, #f58529, #dd2a7b, #8134af, #515bd4) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      transition: 0.3s !important;
+    }
+    .facebook-icon:hover{
+      color: #1877f2 !important;
+      transition: 0.3s !important;
+    }
+    .linkedin-icon:hover{
+      color: #4b89c7;
+      transition: 0.3ss !important;
+    }
   </style>
 </head>
 <body id="topo" class="bg-black text-white position-relative">
@@ -42,19 +57,19 @@
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto gap-3 fw-medium">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Início</a>
+              <a class="nav-link active" aria-current="page" href="#hero">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Produtos</a>
+              <a class="nav-link" href="#produtos">Produtos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
+              <a class="nav-link" href="#sobre">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Depoimentos</a>
+              <a class="nav-link" href="#depoimentos">Depoimentos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
+              <a class="nav-link" href="#contato">Contato</a>
             </li>
             <li class="nav-item">
               <a class="btn btn-outline-info text-light fw-medium shadow-sm" href="#">
@@ -184,7 +199,7 @@
     </section>
 
     <!-- Seção Produtos -->
-    <section id="produto" class="min-vh-100 d-flex align-items-center bg-black py-5 border-top border-secondary">
+    <section id="produtos" class="min-vh-100 d-flex align-items-center bg-black py-5 border-top border-secondary">
       <div class="container py-5">
         <div class="text-center mb-5">
           <h2 class="display-4 fw-bold text-white">Vitrine de Produtos</h2>
@@ -510,6 +525,135 @@
 </div> <!--fechamento do Carrossel-->
 
 
+      </div>
+    </section>
+
+    <!--Seção de Contato-->
+    <section id="contato" class="min-vh-100 bg-black d-flex align-items-center py-5 border-top border-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h2 class="display-5 fw-bold text-white mb-4">
+              Vamos <span class="text-info">Conversar?</span>
+            </h2>
+            <p class="lead text-secondary">
+              Dúvidas técnicas ou orçamentos para sua empresa: Entre em contato com o time Nexus Dev Shop.
+            </p>
+            
+            <div class="vstack gap-4">
+              <a 
+                href="https://wa.me/5565992831734" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="d-flex align-items-center text-decoration-none text-white gap-3"
+              >
+                <i class="bi bi-whatsapp fs-2 text-success"></i>
+                <div>
+                  <h6 class="fw-bold mb-0">WhatsApp</h6>
+                  <span class="text-secondary small">(65) 99283-1734</span>
+                </div>
+              </a>
+
+              <a 
+                href="mailto:sasalele@nexusdevshop.com.br" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="d-flex align-items-center text-decoration-none text-white gap-3"
+              >
+                <i class="bi bi-envelope-fill fs-2 text-info"></i>
+                <div>
+                  <h6 class="fw-bold mb-0">Email Técnico</h6>
+                  <span class="text-secondary small">sasalele@nexusdevshop.com.br</span>
+                </div>
+              </a>
+              
+              <div>
+                <h6 class="text-uppercase text-info fw-bold small mb-3">
+                  Minha Presença Digital
+                </h6>
+                <div class="d-flex gap-4">
+                  <a 
+                    href="https://instagram.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="text-secondary fs-3 shadow-sm instagram-icon"
+                    title="Instagram"
+                  >
+                    <i class="bi bi-instagram"></i>
+                  </a>
+
+                  <a 
+                    href="https://facebook.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="text-secondary fs-3 shadow-sm facebook-icon"
+                    title="facebook"
+                  >
+                    <i class="bi bi-facebook"></i>
+                  </a>
+
+                  <a 
+                    href="https://linkedin.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="text-secondary fs-3 shadow-sm linkedin-icon"
+                    title="linkedin"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+             <div class="bg-black bg-gradient p-5 rounded-4 shadow-lg border border-secondary text-white">
+                <form action="" class="row">
+                  <div class="col-md-6">
+                    <label for="nome" class="form-label small text-secondary fw-bold">
+                      Nome Completo
+                    </label>
+                    <input 
+                      type="text" 
+                      name="nome" 
+                      id="nome"
+                      class="form-control bg-dark border-secondary text-white py-3 news-placeholder"
+                      placeholder="Digite seu nome"
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label small text-secondary fw-bold">
+                      E-mail
+                    </label>
+                    <input 
+                      type="email" 
+                      name="email" 
+                      id="email"
+                      class="form-control bg-dark border-secondary text-white py-3 news-placeholder"
+                      placeholder="Digite seu e-mail"
+                    >
+                  </div>
+                  <div class="col-12">
+                    <label for="mensagem" class="form-label small text-secondary fw-bold">
+                      Mensagem 
+                    </label>
+                    <textarea 
+                      name="mensagem" 
+                      id="mensagem" 
+                      rows="10"
+                      placeholder="Digite sua mensagem"
+                      class="form-control bg-dark border-secondary text-white news-placeholder"
+                    >
+                    </textarea>
+                    <div class="col-12 mt-4">
+                      <button class="btn btn-outline-info w-100 fw-bold text-white py-3 shadow-lg fs-5">
+                        <i class="bi bi-send-fill me-2"></i>Enviar Mensagem
+                      </button>
+                    </div>
+                  </div>
+                </form>
+             </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
